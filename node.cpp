@@ -346,6 +346,10 @@ int main() {
     unsigned int k5 = std::rand() % (int)pow((double)2, (double)M);
     unsigned int k6 = std::rand() % (int)pow((double)2, (double)M);
     unsigned int k7 = std::rand() % (int)pow((double)2, (double)M);
+    unsigned int k8 = std::rand() % (int)pow((double)2, (double)M);
+    unsigned int k9 = std::rand() % (int)pow((double)2, (double)M);
+    unsigned int k10 = std::rand() % (int)pow((double)2, (double)M);
+    unsigned int k11 = std::rand() % (int)pow((double)2, (double)M);
 
     unsigned int v0 = std::rand() % (int)pow((double)2, (double)M);
     unsigned int v1 = std::rand() % (int)pow((double)2, (double)M);
@@ -355,6 +359,10 @@ int main() {
     unsigned int v5 = std::rand() % (int)pow((double)2, (double)M);
     unsigned int v6 = std::rand() % (int)pow((double)2, (double)M);
     unsigned int v7 = std::rand() % (int)pow((double)2, (double)M);
+    unsigned int v8 = std::rand() % (int)pow((double)2, (double)M);
+    unsigned int v9 = std::rand() % (int)pow((double)2, (double)M);
+    unsigned int v10 = std::rand() % (int)pow((double)2, (double)M);
+    unsigned int v11 = std::rand() % (int)pow((double)2, (double)M);
 
     // all operations done on n0 in case some node insertions fail 
 
@@ -390,15 +398,23 @@ int main() {
     n0.insert(k5, v5);
     n0.insert(k6, v6);
     n0.insert(k7, v7);
+    n0.insert(k8, v8);
+    n0.insert(k9, v9);
+    n0.insert(k10, v10);
+    n0.insert(k11, v11);
 
     n0.find(k4);
     n0.find(k5);
     n0.find(k6);
     n0.find(k7);
+    n0.find(k8);
+    n0.find(k9);
+    n0.find(k10);
+    n0.find(k11);
 
     n0.remove(k0);
     n0.remove(k1);
-    printf("removed keys %d and %d\n", k0, k1);
+    printf("\nremoved keys %d and %d to demonstrate correct removal\n", k0, k1);
 
     n0.find(k0);
     n0.find(k1);
