@@ -2,6 +2,7 @@
 #include <math.h>
 #include <cstdlib>
 #include <iostream>
+#include <stdio.h>
 #include <string>
 #define M 8
 #define SUCCESSOR fingerTable_.get(1)
